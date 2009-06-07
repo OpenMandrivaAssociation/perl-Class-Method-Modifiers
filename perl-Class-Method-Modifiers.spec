@@ -1,5 +1,5 @@
 %define module   Class-Method-Modifiers
-%define version    1.01
+%define version    1.02
 %define release    %mkrel 1
 
 Name:       perl-%{module}
