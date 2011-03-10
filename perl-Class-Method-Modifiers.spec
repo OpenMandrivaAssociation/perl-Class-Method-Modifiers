@@ -15,6 +15,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(MRO::Compat)
 BuildRequires: perl(Test::Exception)
 BuildRequires: perl(Test::More)
+BuildRequires: perl(Test::Fatal)
 BuildArch: noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
