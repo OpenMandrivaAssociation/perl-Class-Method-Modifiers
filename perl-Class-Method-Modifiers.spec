@@ -1,5 +1,5 @@
 %define upstream_name    Class-Method-Modifiers
-%define upstream_version 2.08
+%define upstream_version 2.09
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -86,6 +86,7 @@ make test
 
 * Wed Jul 23 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.01-1mdv2009.0
 - initial mdv release, generated with cpan2dist
+
 
 
 
