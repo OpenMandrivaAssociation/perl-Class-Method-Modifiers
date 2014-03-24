@@ -2,5 +2,6 @@ removed_sources:
   Class-Method-Modifiers-1.07.tar.gz: 2f90735e0287523bf2d5965864aa39523f923c2b
   Class-Method-Modifiers-2.04.tar.gz: ca4f664cc4d276184c2f5bd76722a42d5cb697dc
   Class-Method-Modifiers-2.08.tar.gz: 8c4d3ec341610261cb2045db08400b46acef07bf
-sources:
   Class-Method-Modifiers-2.09.tar.gz: 2d53befc9a1786fca32a529c34e9dea61926df2f
+sources:
+  Class-Method-Modifiers-2.10.tar.gz: c98863fdd37c921df00969d384a1092327fdb2a8
