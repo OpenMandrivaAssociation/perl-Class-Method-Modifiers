@@ -17,6 +17,7 @@ BuildRequires:	perl(MRO::Compat)
 BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test::Fatal)
+BuildRequires:	perl(Test::Requires)
 BuildArch:	noarch
 
 %description
