@@ -1,9 +1,9 @@
 %define upstream_name    Class-Method-Modifiers
-%define upstream_version 2.10
+%define upstream_version 2.12
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Release:	1
 
 Summary:	Provides Moose-like method modifiers
 License:	GPL+ or Artistic
