@@ -18,6 +18,7 @@ BuildRequires:	perl(Test::Exception)
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test::Fatal)
 BuildRequires:	perl(Test::Requires)
+BuildRequires:	perl(Test::Needs)
 BuildArch:	noarch
 
 %description
