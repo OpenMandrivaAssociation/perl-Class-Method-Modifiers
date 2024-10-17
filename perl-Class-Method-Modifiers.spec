@@ -8,7 +8,7 @@ Release:	2
 Summary:	Provides Moose-like method modifiers
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://metacpan.org/pod/Class::Method::Modifiers
+Url:		https://metacpan.org/pod/Class::Method::Modifiers
 Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
