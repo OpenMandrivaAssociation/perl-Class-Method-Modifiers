@@ -1,15 +1,14 @@
 %define upstream_name    Class-Method-Modifiers
-%define upstream_version 2.13
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	3
+Version:	2.15
+Release:	1
 
 Summary:	Provides Moose-like method modifiers
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/pod/Class::Method::Modifiers
-Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
@@ -38,59 +37,19 @@ original method. See the 'MODIFIERS' section for more details on how the
 particular modifiers work.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes
 %{_mandir}/man3/*
 %{perl_vendorlib}/Class
-
-
-%changelog
-* Thu Mar 10 2011 Guillaume Rousse <guillomovitch@mandriva.org> 1.70.0-1mdv2011.0
-+ Revision: 643366
-- update to new version 1.07
-
-* Sat Nov 27 2010 Guillaume Rousse <guillomovitch@mandriva.org> 1.60.0-1mdv2011.0
-+ Revision: 601861
-- update to new version 1.06
-
-* Fri Nov 06 2009 Jérôme Quelin <jquelin@mandriva.org> 1.50.0-1mdv2011.0
-+ Revision: 461264
-- update to 1.05
-
-* Wed Jul 29 2009 Jérôme Quelin <jquelin@mandriva.org> 1.40.0-1mdv2010.0
-+ Revision: 403014
-- rebuild using %%perl_convert_version
-
-* Thu Jun 18 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.04-1mdv2010.0
-+ Revision: 387001
-- update to new version 1.04
-
-* Sun Jun 07 2009 Guillaume Rousse <guillomovitch@mandriva.org> 1.02-1mdv2010.0
-+ Revision: 383474
-- update to new version 1.02
-
-* Wed Jul 23 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.01-1mdv2009.0
-+ Revision: 242072
-- import perl-Class-Method-Modifiers
-
-
-* Wed Jul 23 2008 Guillaume Rousse <guillomovitch@mandriva.org> 1.01-1mdv2009.0
-- initial mdv release, generated with cpan2dist
-
-
-
-
-
-
