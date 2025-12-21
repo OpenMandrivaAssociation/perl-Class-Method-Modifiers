@@ -10,6 +10,7 @@ Group:		Development/Perl
 Url:		https://metacpan.org/pod/Class::Method::Modifiers
 Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
 BuildRequires:	perl(MRO::Compat)
